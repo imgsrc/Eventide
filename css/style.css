@@ -1,3 +1,149 @@
+html, body {
+    height: 100%;
+
+}
+
+body {
+    background: #ffffff;
+    font: normal 16px Ubuntu;
+    color: #828282;
+    min-width: 320px;
+}
+
+a {
+    font: bold 17px Monserrat;
+    color: #2cc7c1;
+}
+
+a:hover {
+    color: #2cc7c1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font: bold 30px Monserrat;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+/*==============================HEADER=========================================================*/
+
+#header {
+    background: url("../img/2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    min-height: 500px;
+}
+
+.section-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.section-row {
+    display: table-row;
+}
+
+.section-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-center {
+    max-width: 600px;
+    display: inline-block;
+}
+
+#header h1 {
+    font: bold 31px Montserrat;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#header p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn {
+    font: normal 17px Montserrat;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    transition: background .5s;
+}
+
+.btn-primary {
+    background: #7ea4e8;
+}
+
+.btn-primary:hover {
+    background: #6787c2;
+}
+
+.btn-default {
+    background: #6a7079;
+}
+
+.btn-default:hover {
+    background: #474c52;
+    color: #ffffff;
+}
+
+/*====================speakers===========================================*/
+#speakers {
+    padding: 90px 0;
+    border-bottom: 2px solid #f0f0f1;
+}
+
+#speakers h2 {
+    color: #828689;
+    font: normal 30px Ubuntu;
+}
+
+.large {
+    color: #828689;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section-tabs {
+    border: 3px solid #ececec;
+    border-radius: 2px;
+}
+
+.section-tabs .nav-tabs li:not(.active) {
+    background: #ececec;
+}
+
+.section-tabs .nav-tabs.nav-justified li a,
+.section-tabs .nav-tabs.nav-justified li.active a,
+.section-tabs .nav-tabs.nav-justified li.active a:focus,
+.section-tabs .nav-tabs.nav-justified li.active a:hover {
+    border-radius: 0;
+    border: none;
+    font-family:Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    outline: 0;
+}
+
+
+
+
+
 
 
 /* Large Devices, Wide Screens */
@@ -12,7 +158,22 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+
+}
+
+@media only screen and (max-width : 600px) {
+    .section-center {
+        max-width: 320px;
+    }
+    #header h1 {
+        font-size: 20px;
+    }
+    #header p {
+        font-size: 16px;
+    }
+    .section-btn {
+        font-size: 15px;
+    }
 }
 
 /* Extra Small Devices, Phones */
